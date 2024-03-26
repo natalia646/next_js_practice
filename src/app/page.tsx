@@ -1,10 +1,5 @@
-import styles from "./page.module.css";
-import Form from "@/components/Form";
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <Form />
-    </main>
-  );
+ redirect('/')
 }
