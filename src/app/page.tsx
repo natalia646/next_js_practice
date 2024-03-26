@@ -1,10 +1,10 @@
 import styles from "./page.module.css";
-
-import Contact from "./(part-of-page)/contacts/page";
+import Form from "@/components/Form";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-          </main>
+      <Form />
+    </main>
   );
 }
