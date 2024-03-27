@@ -1,6 +1,13 @@
-import {useTranslations} from 'next-intl';
- 
+import Header from "@/components/header";
+import { useTranslations } from "next-intl";
+
 export default function Index() {
-  const t = useTranslations('Index');
-  return <h1>{t('title')}</h1>;
+  const t = useTranslations("Index");
+  return (
+    <>
+    <Header/>
+      <h1>{t("title")}</h1>
+      <h2>{t("desc")}</h2>
+    </>
+  );
 }
