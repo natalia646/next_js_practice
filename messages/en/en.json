@@ -1,0 +1,12 @@
+{
+  "Index": {
+    "title": "Hello world!",
+    "desc": "This is greate thin"
+  },
+  "Header": {
+    "about": "About Us",
+    "seveces": "Serveces",
+    "contacts": "Conntacts",
+    "news": "News"
+  }
+}
