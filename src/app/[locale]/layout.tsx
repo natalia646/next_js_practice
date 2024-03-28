@@ -1,3 +1,4 @@
+import Header from "@/components/[header]/header";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 // import "./globals.css";
@@ -18,7 +19,9 @@ export default function LocaleLayout({
 }) {
   return (
     <html lang={locale}>
-      <body>{children}</body>
+      <body>
+        <Header/>
+        {children}</body>
     </html>
   );
 }
