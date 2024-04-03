@@ -1,6 +1,6 @@
 import { useMessages, useTranslations } from "next-intl";
 import { Link } from "../../navigation";
-import LocalSwither from "./local-swither";
+import LocalSwither from "./local";
 
 export default function Header() {
   const t = useTranslations("Header");

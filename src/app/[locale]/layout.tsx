@@ -1,9 +1,12 @@
-import Header from "@/components/[header]/header";
+import Header from "@/components/header/header";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto_Mono } from "next/font/google";
 // import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const robotoMono = Roboto_Mono({
+  subsets: ["latin"],
+  weight: ["200", "400", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -12,16 +15,17 @@ export const metadata: Metadata = {
 
 export default function LocaleLayout({
   children,
-  params: {locale}
+  params: { locale },
 }: {
   children: React.ReactNode;
-  params: {locale: string};
+  params: { locale: string };
 }) {
   return (
     <html lang={locale}>
-      <body>
-        <Header/>
-        {children}</body>
+      <body className={robotoMono.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
